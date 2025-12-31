@@ -23,7 +23,7 @@ export function parseMindmapData(
     nodes.push({
       id: node.id,
       type: 'mindmap',
-      data: nodeData,
+      data: nodeData as unknown as Record<string, unknown>,
       position: { x: 0, y: 0 },
     });
 

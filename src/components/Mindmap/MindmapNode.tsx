@@ -5,12 +5,13 @@ import { getNodeColor } from '@/utils/layout';
 import { useMindmapStore } from '@/store/mindmapStore';
 import { AddNodeDialog } from './AddNodeDialog';
 
-export const MindmapNode = memo(({ data, selected, id }: NodeProps<NodeData>) => {
+export const MindmapNode = memo(({ data, selected, id }: NodeProps) => {
   const { setSelectedNodeId, setHoveredNodeId, hoveredNodeId, toggleExpanded, selectedNodeId, nodes } = useMindmapStore();
   const [addNodeOpen, setAddNodeOpen] = useState(false);
-  const { title, depth, hasChildren, summary, parentId } = data;
+  const nodeData = data as unknown as NodeData;
+  const { title, depth, hasChildren, summary, parentId } = nodeData;
   const colorClass = getNodeColor(depth);
-  const isHovered = hoveredNodeId === data.id;
+  const isHovered = hoveredNodeId === nodeData.id;
   const isSelected = selected;
   
   // Check if this node is related to the selected node
@@ -24,20 +25,20 @@ export const MindmapNode = memo(({ data, selected, id }: NodeProps<NodeData>) =>
   })() : false;
 
   const handleClick = () => {
-    setSelectedNodeId(data.id);
+    setSelectedNodeId(nodeData.id);
     if (hasChildren) {
-      toggleExpanded(data.id);
+      toggleExpanded(nodeData.id);
     }
   };
 
   const handleHandleClick = (e: React.MouseEvent) => {
     e.stopPropagation();
-    setSelectedNodeId(data.id);
+    setSelectedNodeId(nodeData.id);
     setAddNodeOpen(true);
   };
 
   const handleMouseEnter = () => {
-    setHoveredNodeId(data.id);
+    setHoveredNodeId(nodeData.id);
   };
 
   const handleMouseLeave = () => {
@@ -77,7 +78,7 @@ export const MindmapNode = memo(({ data, selected, id }: NodeProps<NodeData>) =>
             </div>
           )}
           <div className="font-bold text-white text-sm leading-tight">
-            {title.split(' ').map((word, i) => (
+            {title.split(' ').map((word: string, i: number) => (
               <div key={i}>{word}</div>
             ))}
           </div>
@@ -101,7 +102,7 @@ export const MindmapNode = memo(({ data, selected, id }: NodeProps<NodeData>) =>
       <AddNodeDialog
         open={addNodeOpen}
         onOpenChange={setAddNodeOpen}
-        parentId={data.id}
+        parentId={nodeData.id}
       />
     </>
   );

@@ -1,5 +1,6 @@
 import { useEffect, useState } from 'react';
 import { useMindmapStore } from '@/store/mindmapStore';
+import { NodeData } from '@/components/Mindmap/types';
 import { Input } from '@/components/ui/input';
 import { Textarea } from '@/components/ui/textarea';
 import { Label } from '@/components/ui/label';
@@ -22,7 +23,7 @@ export const NodeDetails = () => {
   const [deleteDialogOpen, setDeleteDialogOpen] = useState(false);
 
   const selectedNode = nodes.find((n) => n.id === selectedNodeId);
-  const nodeData = selectedNode?.data;
+  const nodeData = selectedNode?.data as unknown as NodeData;
 
   useEffect(() => {
     if (nodeData) {

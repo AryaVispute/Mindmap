@@ -92,7 +92,7 @@ export const MindmapCanvas = () => {
         maxZoom={2}
         defaultViewport={{ x: 0, y: 0, zoom: 1 }}
       >
-        <Background patternColor="#334155" gap={20} />
+        <Background bgColor="#334155" gap={20} />
         <Controls 
           position="bottom-left"
           showZoom={true}
