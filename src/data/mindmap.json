@@ -1,0 +1,130 @@
+{
+  "id": "root",
+  "title": "Vitamins in Human Body",
+  "summary": "Essential micronutrients required for normal metabolic function, growth, and overall health, typically obtained through diet. They are vital for diverse bodily processes, including energy production, immune defense, and cellular repair, playing a crucial role in preventing various diseases and maintaining overall well-being.",
+  "children": [
+    {
+      "id": "dietary-sources",
+      "title": "Dietary Sources",
+      "summary": "Vitamins are obtained from various food sources including fruits, vegetables, grains, meats, and fortified products. Sunlight exposure is also crucial for vitamin D synthesis.",
+      "children": [
+        {
+          "id": "fruits-vegetables",
+          "title": "Fruits & Vegetables",
+          "summary": "Rich sources of water-soluble vitamins like vitamin C and B-complex vitamins, as well as fat-soluble vitamins like vitamin K."
+        },
+        {
+          "id": "meat-dairy",
+          "title": "Meat & Dairy",
+          "summary": "Primary sources of B-complex vitamins, vitamin D, and vitamin A. Animal products provide bioavailable forms of these nutrients."
+        },
+        {
+          "id": "grains-nuts",
+          "title": "Grains & Nuts",
+          "summary": "Contain B-complex vitamins, vitamin E, and other essential micronutrients. Whole grains and nuts are particularly nutrient-dense."
+        },
+        {
+          "id": "sunlight-fortified",
+          "title": "Sunlight & Fortified",
+          "summary": "Sunlight enables vitamin D synthesis in the skin, while fortified foods help address deficiencies in populations."
+        }
+      ]
+    },
+    {
+      "id": "key-bodily-roles",
+      "title": "Key Bodily Roles",
+      "summary": "Vitamins serve critical functions across multiple physiological systems, supporting everything from energy metabolism to immune function and cellular protection.",
+      "children": [
+        {
+          "id": "energy-metabolism",
+          "title": "Energy Metabolism",
+          "summary": "B-complex vitamins act as coenzymes in metabolic pathways, facilitating the conversion of carbohydrates, fats, and proteins into usable energy."
+        },
+        {
+          "id": "immune-system-support",
+          "title": "Immune System Support",
+          "summary": "Vitamins C, D, and A play essential roles in maintaining immune function, supporting both innate and adaptive immune responses."
+        },
+        {
+          "id": "antioxidant-protection",
+          "title": "Antioxidant Protection",
+          "summary": "Vitamins C and E act as antioxidants, neutralizing free radicals and protecting cells from oxidative damage."
+        },
+        {
+          "id": "bone-health",
+          "title": "Bone Health",
+          "summary": "Vitamins D and K are crucial for calcium absorption, bone mineralization, and maintaining skeletal integrity."
+        }
+      ]
+    },
+    {
+      "id": "health-impact-balance",
+      "title": "Health Impact & Balance",
+      "summary": "Maintaining adequate vitamin levels is crucial, as both deficiencies (hypovitaminosis) and excesses (hypervitaminoisis) can lead to health problems. These imbalances can manifest in a range of symptoms and conditions, significantly affecting long-term health and quality of life if not addressed.",
+      "children": [
+        {
+          "id": "deficiency",
+          "title": "Deficiency",
+          "summary": "Vitamin deficiencies can cause various health issues, from mild symptoms like fatigue to severe conditions like scurvy (vitamin C) or rickets (vitamin D)."
+        },
+        {
+          "id": "excess",
+          "title": "Excess",
+          "summary": "Hypervitaminosis, particularly with fat-soluble vitamins, can lead to toxicity symptoms and long-term health complications."
+        }
+      ]
+    },
+    {
+      "id": "classification",
+      "title": "Vitamin Classification",
+      "summary": "Vitamins are primarily classified based on their solubility in fats or water, which dictates their absorption, storage, and excretion mechanisms in the body. This fundamental distinction influences dietary intake recommendations, potential for toxicity, and how they are utilized by different physiological systems.",
+      "children": [
+        {
+          "id": "water-soluble",
+          "title": "Water-Soluble Vitamins",
+          "summary": "These vitamins dissolve in water and are not stored in the body, requiring regular dietary intake. They include vitamin C and the B-complex vitamins.",
+          "children": [
+            {
+              "id": "vit-c",
+              "title": "Vitamin C",
+              "summary": "Essential for collagen synthesis, immune function, and as an antioxidant. Found in citrus fruits, berries, and leafy greens."
+            },
+            {
+              "id": "b-complex",
+              "title": "B-Complex Vitamins",
+              "summary": "A group of eight vitamins including B1, B2, B3, B5, B6, B7, B9, and B12, each playing unique roles in metabolism and cellular function."
+            }
+          ]
+        },
+        {
+          "id": "fat-soluble",
+          "title": "Fat-Soluble Vitamins",
+          "summary": "These vitamins are absorbed with dietary fats and stored in the body's fatty tissues and liver. They include vitamins A, D, E, and K.",
+          "children": [
+            {
+              "id": "vit-a",
+              "title": "Vitamin A",
+              "summary": "Critical for vision, immune function, and cell growth. Found in liver, dairy products, and orange-colored fruits and vegetables."
+            },
+            {
+              "id": "vit-d",
+              "title": "Vitamin D",
+              "summary": "Essential for calcium absorption and bone health. Synthesized in the skin through sunlight exposure and found in fatty fish and fortified foods."
+            },
+            {
+              "id": "vit-e",
+              "title": "Vitamin E",
+              "summary": "A powerful antioxidant that protects cell membranes from oxidative damage. Found in nuts, seeds, and vegetable oils."
+            },
+            {
+              "id": "vit-k",
+              "title": "Vitamin K",
+              "summary": "Necessary for blood clotting and bone metabolism. Found in leafy green vegetables and produced by gut bacteria."
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
+
