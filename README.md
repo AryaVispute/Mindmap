@@ -38,27 +38,27 @@ The application follows a **component-based architecture** with clear separation
                │
                ▼
 ┌─────────────────────────────────────────┐
-│        State Management Layer            │
-│      Zustand Store (mindmapStore)        │
-│  - Manages nodes, edges, selection       │
-│  - Handles expand/collapse state         │
-│  - Updates trigger UI re-renders         │
+│        State Management Layer           │
+│      Zustand Store (mindmapStore)       │
+│  - Manages nodes, edges, selection      │
+│  - Handles expand/collapse state        │
+│  - Updates trigger UI re-renders        │
 └──────────────┬──────────────────────────┘
                │
                ▼
 ┌─────────────────────────────────────────┐
-│         Business Logic Layer             │
-│  - dataParser.ts: JSON → Graph           │
-│  - layout.ts: Position calculation       │
+│         Business Logic Layer            │
+│  - dataParser.ts: JSON → Graph          │
+│  - layout.ts: Position calculation      │
 └──────────────┬──────────────────────────┘
                │
                ▼
 ┌─────────────────────────────────────────┐
 │          Presentation Layer             │
 │  - MindmapCanvas: Main graph view       │
-│  - MindmapNode: Individual nodes         │
-│  - Sidebar: Node details panel           │
-│  - Toolbar: Control buttons              │
+│  - MindmapNode: Individual nodes        │
+│  - Sidebar: Node details panel          │
+│  - Toolbar: Control buttons             │
 └─────────────────────────────────────────┘
 ```
 
